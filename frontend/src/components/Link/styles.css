@@ -1,0 +1,2 @@
+.cf-link{color:var(--color-navy-700);text-decoration:none;border-bottom:1px solid transparent;transition:color var(--transition-short),border-color var(--transition-short)}
+.cf-link:hover,.cf-link:focus{color:var(--color-gold);border-color:var(--color-border)}

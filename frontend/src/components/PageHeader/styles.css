@@ -1,0 +1,6 @@
+.page-header{padding:calc(var(--space-lg) + 4px) 0;border-bottom:1px solid rgba(11,37,69,0.06);background:linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0));}
+.page-header .intro{margin-top:10px;color:var(--color-muted);max-width:var(--measure)}
+
+/* subtle reveal */
+.page-header{opacity:0;transform:translateY(6px);animation:revealUp 420ms var(--transition-short) cubic-bezier(.22,.9,.27,1) both}
+@keyframes revealUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}

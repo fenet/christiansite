@@ -1,0 +1,7 @@
+.cta-section{background:linear-gradient(180deg, rgba(11,37,69,0.02), transparent);padding:var(--space-lg) 0;border-radius:var(--radius-md)}
+.cta-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-lg)}
+.cta-inner h2{margin:0}
+
+@media(max-width:700px){
+  .cta-inner{flex-direction:column;align-items:flex-start}
+}

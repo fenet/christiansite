@@ -1,0 +1,7 @@
+.video-placeholder{display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(11,37,69,0.02), transparent);border:1px solid var(--color-border);border-radius:8px;padding:12px;height:220px}
+.video-inner{display:flex;align-items:center;justify-content:center;width:100%}
+.video-box{display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--color-muted)}
+.video-icon{font-size:28px;color:var(--color-gold);margin-bottom:8px}
+.video-text{font-weight:600}
+
+@media(max-width:700px){.video-placeholder{height:160px}}

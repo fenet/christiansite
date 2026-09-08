@@ -1,0 +1,77 @@
+:root{
+  --color-navy: #071732; /* deep navy */
+  --color-navy-700: #0b2545;
+  --color-gold: #b88e3a; /* elegant gold accent */
+  --color-gold-900: #8f6f2e;
+  --color-bg: #ffffff;
+  --color-muted: #6b7280;
+  --color-border: #e6e9ee;
+  --color-text: #0b2545;
+
+  /* Typography */
+  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --font-serif: 'Merriweather', Georgia, 'Times New Roman', serif;
+  --text-base: 16px;
+  --leading-base: 1.7;
+  --measure: 62ch;
+
+  /* Spacing */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+
+  /* Border radius & shadows */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --shadow-subtle: 0 6px 18px rgba(11,37,69,0.06);
+
+  /* Container widths */
+  --container-sm: 680px;
+  --container-md: 920px;
+  --container-lg: 1200px;
+
+  /* Breakpoints */
+  --bp-mobile: 700px;
+  --bp-tablet: 900px;
+
+  /* Transitions */
+  --transition-short: 180ms;
+  --transition-medium: 320ms;
+}
+
+/* Base typography */
+html{font-size:var(--text-base)}
+body{font-family:var(--font-sans);margin:0;background:var(--color-bg);color:var(--color-text);line-height:var(--leading-base);-webkit-font-smoothing:antialiased}
+
+h1,h2,h3,h4{font-family:var(--font-serif);color:var(--color-text);margin:0 0 var(--space-sm) 0}
+h1{font-size:2.25rem;letter-spacing:-0.02em;font-weight:600}
+h2{font-size:1.375rem;font-weight:600}
+h3{font-size:1.05rem;font-weight:600}
+
+/* comfortable measure for editorial copy */
+.prose{max-width:var(--measure)}
+
+p{margin:0 0 var(--space-md) 0;color:var(--color-muted)}
+
+main{padding:calc(var(--space-lg) + 8px) 1rem}
+
+/* Utility container */
+.container{max-width:var(--container-lg);margin:0 auto}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{transition:none !important;animation:none !important}
+  html{scroll-behavior:auto !important}
+  :root{--transition-short:0ms;--transition-medium:0ms}
+}
+
+/* Accent link style */
+a{color:var(--color-navy-700);text-decoration:none;border-bottom:1px solid rgba(184,142,58,0.12)}
+a:hover{color:var(--color-gold)}
+
+/* Small helpers */
+.muted{color:var(--color-muted)}
+

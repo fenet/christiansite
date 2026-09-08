@@ -1,0 +1,4 @@
+.section-heading{margin-bottom:var(--space-lg)}
+.section-heading .eyebrow{font-size:0.85rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--color-muted);margin-bottom:8px}
+.section-heading .title{font-size:1.5rem;margin:0 0 8px 0}
+.section-heading .lead{color:var(--color-muted);max-width:720px}
