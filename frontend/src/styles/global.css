@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
   --color-navy: #071732; /* deep navy */
   --color-navy-700: #0b2545;
@@ -44,7 +48,11 @@
 
 /* Base typography */
 html{font-size:var(--text-base)}
-body{font-family:var(--font-sans);margin:0;background:var(--color-bg);color:var(--color-text);line-height:var(--leading-base);-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+html,body{max-width:100%;overflow-x:hidden}
+body{font-family:var(--font-sans);margin:0;background:#071522;color:var(--color-text);line-height:var(--leading-base);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+.app-root{background:#071522;width:100%;max-width:100%;overflow-x:hidden}
 
 h1,h2,h3,h4{font-family:var(--font-serif);color:var(--color-text);margin:0 0 var(--space-sm) 0}
 h1{font-size:2.25rem;letter-spacing:-0.02em;font-weight:600}
@@ -56,7 +64,7 @@ h3{font-size:1.05rem;font-weight:600}
 
 p{margin:0 0 var(--space-md) 0;color:var(--color-muted)}
 
-main{padding:calc(var(--space-lg) + 8px) 1rem}
+.app-root > main{padding:0}
 
 /* Utility container */
 .container{max-width:var(--container-lg);margin:0 auto}

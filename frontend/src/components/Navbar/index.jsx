@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <header className={`site-header ${scrolled ? 'solid' : 'transparent'}`}>
-      <div className="nav-inner">
+      <div className="nav-inner w-full px-6 md:px-12">
         <div className="brand">
           <NavLink to="/" className="logo-link">
             <img src="/images/cf-professionals-logo.png" alt="CF Professionals" className="logo" />

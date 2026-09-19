@@ -2,9 +2,9 @@ import React from 'react'
 import Button from '../Button'
 import './styles.css'
 
-export default function CTASection({title, children, cta}){
+export default function CTASection({title, children, cta, className = ''}){
   return (
-    <section className="cta-section">
+    <section className={`cta-section ${className}`.trim()}>
       <div className="container">
         <div className="cta-inner">
           <div>

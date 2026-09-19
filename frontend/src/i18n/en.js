@@ -38,9 +38,33 @@ export default {
     why_title: 'Why work with me?',
     why_lead_title: 'Traditional direct placement\nPersonal & responsible support',
     why_list: ['Traditional direct placement','Personal support by the owner','Direct responsibility for the placement process','Fast coordination and short decision paths','More than 8 years of experience in recruitment','Industry experience in medicine, nursing, healthcare, logistics, freight forwarding and real estate','Quality over quantity'],
+    branches_eyebrow: 'SPECIALISED EXPERTISE',
+    branches_title: 'Specialised expertise for your industry',
+    branches_intro: 'We focus on deep industry knowledge and measurable results.',
+    branches_context: 'Why these industries? Because experience in specialised fields makes the difference.',
+    industries_tags: {
+      healthcare: 'HEALTHCARE',
+      medical: 'MEDICAL',
+      logistics: 'LOGISTICS',
+      real_estate: 'REAL ESTATE'
+    },
+    industries_list: {
+      healthcare: 'Healthcare & nursing',
+      medical: 'Medicine',
+      logistics: 'Logistics & freight forwarding',
+      real_estate: 'Real estate services'
+    },
     industries: ['Healthcare & nursing','Medicine','Logistics & freight forwarding','Real estate services'],
     industry_explain_title: 'Why these industries?',
     industry_explain_text: 'My network in logistics, freight forwarding, real estate and commercial areas was established early in my recruiting career. Later, I added a focus on healthcare and medicine. Today I combine both experiences and place the right candidates directly with companies.',
+    process_eyebrow: 'OUR PROCESS',
+    process_title: 'The path to the right leadership hire',
+    process_labels: {
+      analyse: 'Analysis',
+      search: 'Search',
+      matching: 'Matching',
+      placement: 'Placement'
+    },
     process_steps: [
       {title:'Initial consultation', text:'We discuss the open position, your requirements and the suitable candidate.'},
       {title:'Search & selection', text:'I search specifically for suitable candidates and perform a careful pre-selection.'},
@@ -52,7 +76,16 @@ export default {
     opportunity_cta: 'View current positions',
     cta_section_title: 'Let’s talk.',
     cta_section_lead: 'Are you looking for qualified employees or planning your next career step? I look forward to your message.',
-    cta_section_button: 'Contact'
+    cta_section_button: 'Contact',
+    linkedin_eyebrow: 'Current openings',
+    linkedin_text: 'Follow our LinkedIn for the latest job postings and executive search updates.',
+    linkedin_cta: 'View on LinkedIn',
+    cta_eyebrow: 'LET’S TALK.',
+    cta_title: 'Let’s talk.',
+    contact_email: 'kontakt@christian-f.de',
+    contact_phone: '+49 170 1234567',
+    cta_primary: 'Contact us',
+    cta_secondary: 'Our services'
   },
   about: {
     pageTitle: 'CF Professionals | Filippi Recruitment — About',

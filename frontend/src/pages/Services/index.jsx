@@ -1,76 +1,119 @@
-import React, {useEffect} from 'react'
-import Section from '../../components/Section'
-import SectionHeading from '../../components/SectionHeading'
-import Button from '../../components/Button'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import './styles.css'
+import { ArrowRight, BriefcaseBusiness, Building2, CheckCircle2, ShieldCheck, Sparkles, Users } from 'lucide-react'
+import Button from '../../components/Button'
 import { useTranslation } from '../../i18n'
 import { localizedRoute } from '../../lib/routes'
 import SEO from '../../components/SEO'
+import PremiumContactStrip from '../../components/PremiumContactStrip'
 
-export default function Services(){
+const services = [
+  {
+    title: 'Direktvermittlung',
+    description: 'Gezielte Suche, Vorauswahl und persönliche Einführung der passenden Kandidaten für Schlüsselpositionen – mit klaren Verantwortlichkeiten und kurzen Entscheidungswegen.',
+    icon: BriefcaseBusiness,
+  },
+  {
+    title: 'Retainer-Modell',
+    description: 'Langfristige, strategische Zusammenarbeit für Unternehmen mit laufendem Recruiting-Bedarf und exklusiver Betreuung definierter Suchaufträge.',
+    icon: ShieldCheck,
+  },
+  {
+    title: 'Executive Search',
+    description: 'Diskrete Suche nach fachlichen und führungstätigen Talenten, die strategisch und persönlich zu Ihrem Unternehmen passen.',
+    icon: Users,
+  },
+  {
+    title: 'Industrien',
+    description: 'Spezifische Erfahrung in Gesundheitswesen, Pflege, Medizin, Logistik und Immobilien mit praxisnaher Marktkenntnis.',
+    icon: Building2,
+  },
+  {
+    title: 'Beratung',
+    description: 'Individuelle Beratung zur Personalstrategie, Kandidaten-Ansprache und Auswahlprozessen – unkompliziert und praxisnah.',
+    icon: Sparkles,
+  },
+  {
+    title: 'Vertrauensvolle Begleitung',
+    description: 'Von der Anforderungsdefinition bis zur erfolgreichen Besetzung begleite ich Sie persönlich, transparent und verlässlich.',
+    icon: CheckCircle2,
+  },
+]
+
+export default function Services() {
   const { t, locale } = useTranslation()
-  useEffect(()=>{
-    // handled by SEO component
-  },[])
 
   return (
     <>
       <SEO title={`CF Professionals | ${t('nav.services')}`} description={t('meta.services')} />
-    <main>
-      <Section>
-        <SectionHeading level={1} title={t('services.direktvermittlung')} eyebrow={t('services.direktvermittlung_eyebrow')} />
-        <div className="service-intro">
-          <p>Sie suchen eine direkte Besetzung für eine Schlüsselposition? Bei der klassischen Direktvermittlung übernehme ich die gezielte Suche, Vorauswahl und persönliche Vorstellung passender Kandidaten. Sie erhalten eine persönliche Betreuung und kurze Abstimmungswege – von der Anforderungsdefinition bis zur erfolgreichen Einstellung.</p>
-        </div>
-      </Section>
 
-      <Section>
-        <SectionHeading title={t('services.retainer')} eyebrow={t('services.retainer_eyebrow')} />
-        <div className="retainer-grid">
-          <div className="retainer-copy">
-            <p>In Retainer-Kooperationen arbeite ich langfristig und partnerschaftlich mit Unternehmen zusammen, um kontinuierlichen Recruiting-Bedarf strategisch zu begleiten. Das Modell ist geeignet, wenn Sie laufend qualifizierte Kandidaten benötigen und eine exklusive, zuverlässige Betreuung wünschen.</p>
+      <main className="bg-[#FAF9F6] text-[#0B111E]">
+        <section className="relative overflow-hidden bg-[#0B111E] text-white">
+          <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-15" viewBox="0 0 1440 760" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M120 670L420 260L760 650L1030 340L1340 620" stroke="#D4AF37" strokeWidth="1.4" strokeOpacity="0.35" />
+            <path d="M0 420L260 180L600 560L930 230L1440 520" stroke="#D4AF37" strokeWidth="1.1" strokeOpacity="0.3" />
+            <path d="M90 220L420 520L700 200L1100 560L1340 200" stroke="#D4AF37" strokeWidth="1.2" strokeOpacity="0.22" />
+          </svg>
+
+          <div className="relative mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
+            <div className="max-w-3xl">
+              <span className="inline-flex items-center rounded-full border border-[#D4AF37]/40 bg-[#D4AF37]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.28em] text-[#D4AF37]">
+                {t('services.hero_eyebrow', 'PERSONALVERMITTLUNG')}
+              </span>
+
+              <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                {t('services.hero_title', 'Personalvermittlung mit Fokus, Klarheit und Verantwortung.')}
+              </h1>
+
+              <div className="mt-6 h-1 w-16 bg-[#D4AF37]" />
+
+              <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
+                {t('services.hero_text', 'Ich unterstütze Unternehmen bei der gezielten Suche nach qualifizierten Fach- und Führungskräften und begleite den gesamten Prozess persönlich, transparent und wirksam.')}
+              </p>
+            </div>
           </div>
+        </section>
 
-          <aside className="capabilities">
-            <ul>
-              <li>Kontinuierliche Kandidatensuche für Ihre offenen Positionen</li>
-              <li>Active Sourcing und direkte Ansprache</li>
-              <li>Aufbau und Pflege eines qualifizierten Netzwerks</li>
-              <li>Vorauswahl und persönliche Erstgespräche mit Kandidaten</li>
-              <li>Erstellung und Abstimmung individueller Anforderungsprofile</li>
-              <li>Exklusive Betreuung definierter Suchaufträge</li>
-              <li>Begleitung des gesamten Bewerbungs- und Auswahlprozesses</li>
-              <li>Unterstützung bei Vertragsverhandlungen und der erfolgreichen Besetzung</li>
-              <li>Laufende Markt- und Recruiting-Beratung</li>
-              <li>Regelmäßige Reporting- und Statusgespräche</li>
-              <li>Langfristige Planung Ihres Personalbedarfs</li>
-            </ul>
-          </aside>
-        </div>
-      </Section>
+        <section className="bg-[#FAF9F6] py-20 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+            <div className="mb-12 max-w-2xl">
+              <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#D4AF37]">
+                {t('services.cards_eyebrow', 'UNSERE LÖSUNGEN')}
+              </span>
+              <h2 className="mt-4 text-3xl font-bold tracking-tight text-[#0B111E] sm:text-4xl">
+                {t('services.cards_title', 'Strategische Unterstützung für Ihre Besetzung.')}
+              </h2>
+              <div className="mt-4 h-1 w-16 bg-[#D4AF37]" />
+            </div>
 
-      <Section>
-        <SectionHeading title={t('services.industries_title')} />
-        <div className="industries-grid services">
-          <div className="industry">Gesundheitswesen &amp; Pflege</div>
-          <div className="industry">Medizin</div>
-          <div className="industry">Logistik &amp; Spedition</div>
-          <div className="industry">Immobiliendienstleister</div>
-        </div>
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+              {services.map(({ title, description, icon: Icon }) => (
+                <article key={title} className="rounded-2xl border border-[#D4AF37]/20 bg-white p-6 shadow-[0_18px_45px_rgba(11,17,30,0.04)] transition-transform duration-200 hover:-translate-y-1">
+                  <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#0B111E] text-[#D4AF37]">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#0B111E]">{title}</h3>
+                  <p className="mt-4 text-sm leading-relaxed text-slate-700">{description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
 
-        <div className="industry-explain">
-          <h4>{t('services.why_title')}</h4>
-          <p>{t('services.why_text')}</p>
-        </div>
-      </Section>
-
-      <Section>
-        <SectionHeading title={t('nav.contact')} />
-        <p>{t('services.contact_cta')}</p>
-        <Link to={localizedRoute('contact', locale)}><Button variant="primary">{t('services.contact_cta')}</Button></Link>
-      </Section>
-    </main>
+        <PremiumContactStrip
+          eyebrow={t('services.cta_eyebrow', 'LASSEN SIE UNS SPRECHEN')}
+          title={t('services.cta_title', 'Geben Sie Ihrer Besetzung die richtige Richtung.')}
+          email={t('home_page.contact_email', 'kontakt@christian-f.de')}
+          phone={t('home_page.contact_phone', '+49 170 1234567')}
+          primaryLabel={t('services.cta_button', 'Jetzt Kontakt aufnehmen')}
+          primaryTo={localizedRoute('contact', locale)}
+          secondaryLabel={t('home_page.cta_secondary', 'Unsere Leistungen')}
+          secondaryTo={localizedRoute('services', locale)}
+          linkedinEyebrow={t('home_page.linkedin_eyebrow', 'Aktuelle Stellen')}
+          linkedinText={t('home_page.linkedin_text', 'Folgen Sie unseren neuesten Stellenangeboten und Updates auf LinkedIn.')}
+          linkedinCta={t('home_page.linkedin_cta', 'Auf LinkedIn ansehen')}
+        />
+      </main>
     </>
   )
 }

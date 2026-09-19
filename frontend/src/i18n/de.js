@@ -75,9 +75,33 @@ export default {
     why_title: 'Warum mit mir?',
     why_lead_title: 'Klassische Direktvermittlung\nPersönliche & verantwortliche Betreuung',
     why_list: ['Klassische Direktvermittlung','Persönliche Betreuung durch den Inhaber','Direkte Verantwortlichkeit für den Vermittlungsprozess','Schnelle Abstimmungen und kurze Wege','Mehr als 8 Jahre Erfahrung in Personalvermittlung und Recruiting','Branchenerfahrung in Medizin, Pflege, Gesundheitswesen, Logistik, Spedition und Immobilien','Qualität statt Masse'],
+    branches_eyebrow: 'SPEZIALISIERTE EXPERTISE',
+    branches_title: 'Spezialisierte Expertise für Ihre Branche',
+    branches_intro: 'Wir fokussieren uns auf vertiefte Branchenkenntnis und messbare Ergebnisse.',
+    branches_context: 'Warum diese Branchen? Weil Erfahrung in spezialisierten Feldern den Unterschied macht.',
+    industries_tags: {
+      healthcare: 'HEALTHCARE',
+      medical: 'MEDICAL',
+      logistics: 'LOGISTICS',
+      real_estate: 'REAL ESTATE'
+    },
+    industries_list: {
+      healthcare: 'Gesundheitswesen & Pflege',
+      medical: 'Medizin',
+      logistics: 'Logistik & Spedition',
+      real_estate: 'Immobiliendienstleister'
+    },
     industries: ['Gesundheitswesen & Pflege','Medizin','Logistik & Spedition','Immobiliendienstleister'],
     industry_explain_title: 'Warum diese Branchen?',
     industry_explain_text: 'Mein Netzwerk in Logistik, Spedition, Immobilien und kaufmännischen Bereichen entstand bereits während meiner ersten Jahre in der Personalvermittlung. Später kam mein Schwerpunkt im Gesundheitswesen und in der Medizin hinzu. Heute verbinde ich beide Erfahrungen und vermittle gezielt passende Mitarbeiter direkt an Unternehmen.',
+    process_eyebrow: 'DER PROZESS',
+    process_title: 'Ihr Weg zur passenden Führungskraft',
+    process_labels: {
+      analyse: 'Analyse',
+      search: 'Suche',
+      matching: 'Matching',
+      placement: 'Besetzung'
+    },
     process_steps: [
       {title:'Erstgespräch', text:'Wir besprechen die offene Position, Ihre Anforderungen und den passenden Kandidaten.'},
       {title:'Suche & Auswahl', text:'Ich suche gezielt nach geeigneten Kandidaten und treffe eine sorgfältige Vorauswahl.'},
@@ -89,7 +113,16 @@ export default {
     opportunity_cta: 'Zu den aktuellen Stellen',
     cta_section_title: 'Lassen Sie uns sprechen.',
     cta_section_lead: 'Sie suchen qualifizierte Mitarbeiter oder möchten den nächsten Karriereschritt machen? Ich freue mich auf Ihre Nachricht.',
-    cta_section_button: 'Kontakt aufnehmen'
+    cta_section_button: 'Kontakt aufnehmen',
+    linkedin_eyebrow: 'Aktuelle Stellen',
+    linkedin_text: 'Folgen Sie uns auf LinkedIn für aktuelle Stellenangebote und Insights zur Executive Search.',
+    linkedin_cta: 'Auf LinkedIn ansehen',
+    cta_eyebrow: 'LASSEN SIE UNS SPRECHEN.',
+    cta_title: 'Lassen Sie uns sprechen.',
+    contact_email: 'kontakt@christian-f.de',
+    contact_phone: '+49 170 1234567',
+    cta_primary: 'Kontakt aufnehmen',
+    cta_secondary: 'Unsere Leistungen'
   },
   about: {
     pageTitle: 'CF Professionals | Filippi Personalvermittlung — Über mich',
