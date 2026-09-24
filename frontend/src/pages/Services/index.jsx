@@ -7,41 +7,41 @@ import { localizedRoute } from '../../lib/routes'
 import SEO from '../../components/SEO'
 import PremiumContactStrip from '../../components/PremiumContactStrip'
 
-const services = [
-  {
-    title: 'Direktvermittlung',
-    description: 'Gezielte Suche, Vorauswahl und persönliche Einführung der passenden Kandidaten für Schlüsselpositionen – mit klaren Verantwortlichkeiten und kurzen Entscheidungswegen.',
-    icon: BriefcaseBusiness,
-  },
-  {
-    title: 'Retainer-Modell',
-    description: 'Langfristige, strategische Zusammenarbeit für Unternehmen mit laufendem Recruiting-Bedarf und exklusiver Betreuung definierter Suchaufträge.',
-    icon: ShieldCheck,
-  },
-  {
-    title: 'Executive Search',
-    description: 'Diskrete Suche nach fachlichen und führungstätigen Talenten, die strategisch und persönlich zu Ihrem Unternehmen passen.',
-    icon: Users,
-  },
-  {
-    title: 'Industrien',
-    description: 'Spezifische Erfahrung in Gesundheitswesen, Pflege, Medizin, Logistik und Immobilien mit praxisnaher Marktkenntnis.',
-    icon: Building2,
-  },
-  {
-    title: 'Beratung',
-    description: 'Individuelle Beratung zur Personalstrategie, Kandidaten-Ansprache und Auswahlprozessen – unkompliziert und praxisnah.',
-    icon: Sparkles,
-  },
-  {
-    title: 'Vertrauensvolle Begleitung',
-    description: 'Von der Anforderungsdefinition bis zur erfolgreichen Besetzung begleite ich Sie persönlich, transparent und verlässlich.',
-    icon: CheckCircle2,
-  },
-]
-
 export default function Services() {
   const { t, locale } = useTranslation()
+
+  const services = [
+    {
+      title: t('services.direct_placement_title', 'Direktvermittlung'),
+      description: t('services.direct_placement_text', 'Gezielte Suche, Vorauswahl und persönliche Einführung der passenden Kandidaten für Schlüsselpositionen – mit klaren Verantwortlichkeiten und kurzen Entscheidungswegen.'),
+      icon: BriefcaseBusiness,
+    },
+    {
+      title: t('services.retainer_title', 'Retainer-Modell'),
+      description: t('services.retainer_text', 'Langfristige, strategische Zusammenarbeit für Unternehmen mit laufendem Recruiting-Bedarf und exklusiver Betreuung definierter Suchaufträge.'),
+      icon: ShieldCheck,
+    },
+    {
+      title: t('services.executive_search_title', 'Executive Search'),
+      description: t('services.executive_search_text', 'Diskrete Suche nach fachlichen und führungstätigen Talenten, die strategisch und persönlich zu Ihrem Unternehmen passen.'),
+      icon: Users,
+    },
+    {
+      title: t('services.industries_title', 'Industrien'),
+      description: t('services.industries_text', 'Spezifische Erfahrung in Gesundheitswesen, Pflege, Medizin, Logistik und Immobilien mit praxisnaher Marktkenntnis.'),
+      icon: Building2,
+    },
+    {
+      title: t('services.advisory_title', 'Beratung'),
+      description: t('services.advisory_text', 'Individuelle Beratung zur Personalstrategie, Kandidaten-Ansprache und Auswahlprozessen – unkompliziert und praxisnah.'),
+      icon: Sparkles,
+    },
+    {
+      title: t('services.support_title', 'Vertrauensvolle Begleitung'),
+      description: t('services.support_text', 'Von der Anforderungsdefinition bis zur erfolgreichen Besetzung begleite ich Sie persönlich, transparent und verlässlich.'),
+      icon: CheckCircle2,
+    },
+  ]
 
   return (
     <>
@@ -57,9 +57,7 @@ export default function Services() {
 
           <div className="relative mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-12 lg:py-24">
             <div className="max-w-3xl">
-              <span className="inline-flex items-center rounded-full border border-[#D4AF37]/40 bg-[#D4AF37]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.28em] text-[#D4AF37]">
-                {t('services.hero_eyebrow', 'PERSONALVERMITTLUNG')}
-              </span>
+              {/* eyebrow removed per design request */}
 
               <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
                 {t('services.hero_title', 'Personalvermittlung mit Fokus, Klarheit und Verantwortung.')}
@@ -100,19 +98,24 @@ export default function Services() {
           </div>
         </section>
 
-        <PremiumContactStrip
-          eyebrow={t('services.cta_eyebrow', 'LASSEN SIE UNS SPRECHEN')}
-          title={t('services.cta_title', 'Geben Sie Ihrer Besetzung die richtige Richtung.')}
-          email={t('home_page.contact_email', 'kontakt@christian-f.de')}
-          phone={t('home_page.contact_phone', '+49 170 1234567')}
-          primaryLabel={t('services.cta_button', 'Jetzt Kontakt aufnehmen')}
-          primaryTo={localizedRoute('contact', locale)}
-          secondaryLabel={t('home_page.cta_secondary', 'Unsere Leistungen')}
-          secondaryTo={localizedRoute('services', locale)}
-          linkedinEyebrow={t('home_page.linkedin_eyebrow', 'Aktuelle Stellen')}
-          linkedinText={t('home_page.linkedin_text', 'Folgen Sie unseren neuesten Stellenangeboten und Updates auf LinkedIn.')}
-          linkedinCta={t('home_page.linkedin_cta', 'Auf LinkedIn ansehen')}
-        />
+        <section className="bg-gradient-to-br from-[#0B111E] via-[#06101A] to-[#000812] py-12">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+            <PremiumContactStrip
+              eyebrow={t('services.cta_eyebrow', 'LASSEN SIE UNS SPRECHEN')}
+              title={t('services.cta_title', 'Geben Sie Ihrer Besetzung die richtige Richtung.')}
+              email={t('home_page.contact_email', 'filippi@personalvermittlung.at')}
+              phone={t('home_page.contact_phone', '+49 170 1234567')}
+              primaryLabel={t('services.cta_button', 'Jetzt Kontakt aufnehmen')}
+              primaryTo={localizedRoute('contact', locale)}
+              secondaryLabel={t('home_page.cta_secondary', 'Unsere Leistungen')}
+              secondaryTo={localizedRoute('services', locale)}
+              linkedinEyebrow={t('home_page.linkedin_eyebrow', 'Aktuelle Stellen')}
+              linkedinText={t('home_page.linkedin_text', 'Folgen Sie unseren neuesten Stellenangeboten und Updates auf LinkedIn.')}
+              linkedinCta={t('home_page.linkedin_cta', 'Auf LinkedIn ansehen')}
+              compact
+            />
+          </div>
+        </section>
       </main>
     </>
   )

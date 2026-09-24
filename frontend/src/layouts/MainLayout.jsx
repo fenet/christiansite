@@ -15,7 +15,6 @@ export default function MainLayout() {
   const { locale } = useTranslation()
   const location = useLocation()
   const isHomePage = location.pathname === '/' || location.pathname === '/en'
-  const isAboutPage = location.pathname === '/ueber-mich' || location.pathname === '/en/about'
 
   useEffect(()=>{
     if(typeof document !== 'undefined' && locale){
@@ -24,7 +23,7 @@ export default function MainLayout() {
   },[locale])
   return (
     <div className="w-full max-w-full overflow-x-hidden">
-      {isHomePage ? <Navbar /> : !isAboutPage && <SiteNavbar />}
+      {isHomePage ? <Navbar /> : <SiteNavbar />}
       <main className="w-full max-w-full overflow-x-hidden">
         <Outlet />
       </main>

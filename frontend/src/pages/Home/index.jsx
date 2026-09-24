@@ -865,10 +865,11 @@ export default function Home(){
 </section>
 
       <PremiumContactStrip
+        compact
         eyebrow={t('home_page.cta_eyebrow') || 'LASSEN SIE UNS SPRECHEN.'}
         title={t('home_page.cta_title') || 'Lassen Sie uns sprechen.'}
-        email={t('home_page.contact_email') || 'kontakt@christian-f.de'}
-        phone={t('home_page.contact_phone') || '+49 170 1234567'}
+        email={t('home_page.contact_email') || 'filippi@personalvermittlung.at'}
+        phone={t('home_page.contact_phone') || '+43 660 421 53 90'}
         primaryLabel={t('home_page.cta_primary') || 'Kontakt aufnehmen'}
         primaryTo={localizedRoute('contact', locale)}
         secondaryLabel={t('home_page.cta_secondary') || 'Unsere Leistungen'}

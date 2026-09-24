@@ -3,9 +3,13 @@ export default {
     home: 'Home', about: 'About Me', services: 'Services', positions: 'Open Positions', contact: 'Contact', impressum: 'Imprint', privacy: 'Privacy'
   },
   footer: {
-    tagline: '"The right people for a strong future."',
-    copyright: '© 2026 All rights reserved.',
-    linkedin: 'LinkedIn'
+    company: 'Filippi Recruitment',
+    tagline: 'The right people for a strong future.',
+    services: 'Direct placement | Career advisory',
+    impressum_link: 'Imprint',
+    privacy_link: 'Privacy',
+    linkedin: 'LinkedIn',
+    copyright: '© 2026 All rights reserved.'
   },
   home: {
     title: 'CF Professionals | Filippi Recruitment',
@@ -82,8 +86,8 @@ export default {
     linkedin_cta: 'View on LinkedIn',
     cta_eyebrow: 'LET’S TALK.',
     cta_title: 'Let’s talk.',
-    contact_email: 'kontakt@christian-f.de',
-    contact_phone: '+49 170 1234567',
+    contact_email: 'filippi@personalvermittlung.at',
+    contact_phone: '+43 660 421 53 90',
     cta_primary: 'Contact us',
     cta_secondary: 'Our services'
   },
@@ -91,6 +95,7 @@ export default {
     pageTitle: 'CF Professionals | Filippi Recruitment — About',
     headerTitle: 'Experience that connects. Personal rather than corporate.',
     headerIntro: 'I provide personal guidance and direct responsibility throughout the placement process.',
+    eyebrow_intro: 'PERSONAL INTRODUCTION',
     personal_intro_title: 'Personal introduction',
     personal_intro_text: 'I support companies in the targeted search for qualified specialists and executives and personally accompany the entire placement process.',
     personal_intro_additional: 'As a sole proprietor I provide direct communication, short decision paths and clear responsibility – from the initial inquiry to successful placement.',
@@ -103,11 +108,43 @@ export default {
     philosophy_text: 'I focus on traditional direct placement with personal support by the owner and direct responsibility for the placement process.',
     retainer_title: 'Placement partnership / retainer model',
     retainer_text: 'If required, I work closely with companies in a partnership model to strategically support long-term staffing needs.',
+    key_focus_title: 'My core focus',
+    key_focus_label: 'CORE FOCUS',
+    key_focus_points: [
+      'Personal support without detours through secondary teams',
+      'Targeted direct outreach in healthcare & medicine',
+      'Trust-based partnerships and quality over quantity'
+    ],
+    experience_label: 'EXPERIENCE',
+    healthcare_title: 'Healthcare & medicine',
+    healthcare_label: 'HEALTHCARE',
+    philosophy_label: 'PHILOSOPHY',
+    cta_eyebrow: 'LET’S TALK',
     career_title: 'Career and placement experience',
     career_text: 'My focus is on healthcare, nursing and medicine. In addition, I support companies in logistics, freight forwarding and real estate services.',
     contact_cta: 'Contact'
   },
   services: {
+    hero_eyebrow: 'PERSONNEL PLACEMENT',
+    hero_title: 'Recruitment with focus, clarity and responsibility.',
+    hero_text: 'I support companies in the targeted search for qualified specialists and executives and personally guide the entire process with transparency and impact.',
+    cards_eyebrow: 'OUR SOLUTIONS',
+    cards_title: 'Strategic support for your hiring needs.',
+    direct_placement_title: 'Direct placement',
+    direct_placement_text: 'Targeted search, pre-selection and personal introduction of suitable candidates for key roles with clear responsibilities and short decision paths.',
+    retainer_title: 'Retainer model',
+    retainer_text: 'Long-term, strategic partnerships for companies with ongoing recruiting needs and dedicated support for defined search mandates.',
+    executive_search_title: 'Executive Search',
+    executive_search_text: 'Discreet search for specialist and leadership talent that fits your organisation strategically and personally.',
+    industries_title: 'Industries',
+    industries_text: 'Specific experience in healthcare, nursing, medicine, logistics and real estate with practical market insight.',
+    advisory_title: 'Advisory',
+    advisory_text: 'Tailored advice on hiring strategy, candidate outreach and selection processes – straightforward and practical.',
+    support_title: 'Trust-based support',
+    support_text: 'From requirement definition to successful placement, I support you personally, transparently and reliably.',
+    cta_eyebrow: 'LET’S TALK',
+    cta_title: 'Give your hiring the right direction.',
+    cta_button: 'Contact us',
     direktvermittlung: 'Direct Placement',
     direktvermittlung_eyebrow: 'The right person. Directly to you.',
     retainer: 'Retainer Collaborations',
@@ -123,9 +160,26 @@ export default {
     cta: 'View current positions',
     contact_note: 'If you do not find a suitable role on LinkedIn, please contact me directly — I support candidates personally.'
   },
+  positions_page: {
+    show_details: 'Show details',
+    hide_details: 'Hide details',
+    offered_title: 'What we offer',
+    tasks_title: 'Your tasks',
+    requirements_title: 'Your profile',
+    contact_prompt: 'Interested? Please send your application to:',
+    contact_phone_label: 'Contact'
+  },
   contact: {
     title: 'Let’s talk.',
     lead: 'Are you looking for qualified employees or planning your next career step? I look forward to your message.',
+    info: {
+      email_label: 'E-mail',
+      email: 'hello@cf-professionals.de',
+      phone_label: 'Phone',
+      phone: '+49 170 000 0000',
+      address_label: 'Address',
+      address: 'Musterstraße 12, 10115 Berlin'
+    },
     fields: { firstName: 'First name', lastName: 'Last name', company: 'Company', phone: 'Phone', email: 'E-mail', subject: 'Subject', message: 'Message', consent: 'I agree to the processing of my data according to the privacy policy.' },
     send: 'Send message',
     sending: 'Sending...',

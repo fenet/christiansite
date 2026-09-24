@@ -26,19 +26,24 @@ export default function PremiumContactStrip({
   linkedinUrl,
   showLinkedIn = true,
   className = '',
+  compact = false,
 }) {
   const primaryLink = primaryTo || '/kontakt'
   const secondaryLink = secondaryTo || '/leistungen'
-  const contactEmail = email || 'kontakt@christian-f.de'
-  const contactPhone = phone || '+49 170 1234567'
+  const contactEmail = email || 'filippi@personalvermittlung.at'
+  const contactPhone = phone || '+43 660 421 53 90'
 
   const PrimaryAction = primaryLink.startsWith('http') ? 'a' : Link
   const SecondaryAction = secondaryLink.startsWith('http') ? 'a' : Link
 
+  const outerMargin = compact ? 'my-6' : 'my-16'
+  const linkedinPadding = compact ? 'p-3 sm:p-5' : 'p-5 sm:p-7'
+  const mainPadding = compact ? 'p-4 sm:p-6 lg:p-8' : 'p-6 sm:p-8 lg:p-10'
+
   return (
-    <div className={`relative mx-auto my-16 w-full max-w-6xl px-4 sm:px-6 ${className}`.trim()}>
+    <div className={`relative mx-auto ${outerMargin} w-full max-w-6xl px-4 sm:px-6 ${className}`.trim()}>
       {showLinkedIn && (
-        <div className="relative z-10 mx-auto w-[92%] max-w-5xl rounded-t-[26px] border border-[#D4AF37]/40 bg-[radial-gradient(circle_at_top_left,_rgba(212,175,55,0.18),transparent_42%),linear-gradient(135deg,#fffdf7_0%,#f8fafc_42%,#fff5c7_100%)] p-5 shadow-[0_20px_55px_rgba(11,17,30,0.08)] backdrop-blur-md sm:p-7">
+        <div className={`relative z-10 mx-auto w-[92%] max-w-5xl rounded-t-[26px] border border-[#D4AF37]/40 bg-[radial-gradient(circle_at_top_left,_rgba(212,175,55,0.18),transparent_42%),linear-gradient(135deg,#fffdf7_0%,#f8fafc_42%,#fff5c7_100%)] ${linkedinPadding} shadow-[0_20px_55px_rgba(11,17,30,0.08)] backdrop-blur-md`}>
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="max-w-2xl">
               <div className="mb-1 text-[10px] font-bold uppercase tracking-[0.28em] text-[#B89628]">
@@ -64,8 +69,8 @@ export default function PremiumContactStrip({
         </div>
       )}
 
-      <section className="relative isolate overflow-hidden rounded-[28px] border border-[#D4AF37]/40 bg-[radial-gradient(circle_at_top_left,_rgba(212,175,55,0.16),transparent_25%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.12),transparent_30%),linear-gradient(135deg,#111b2c_0%,#0B111E_35%,#070b12_100%)] p-6 shadow-[0_35px_90px_rgba(11,17,30,0.22)] sm:p-8 lg:p-10">
-        <div className="pointer-events-none absolute -left-16 -top-16 h-56 w-56 rounded-full bg-[#D4AF37]/12 blur-3xl" />
+      <section className={`relative isolate overflow-hidden rounded-[28px] border border-[#D4AF37]/40 bg-[radial-gradient(circle_at_top_left,_rgba(212,175,55,0.16),transparent_25%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.12),transparent_30%),linear-gradient(135deg,#111b2c_0%,#0B111E_35%,#070b12_100%)] ${mainPadding} shadow-[0_35px_90px_rgba(11,17,30,0.22)]`}>
+        <div className="pointer-events-none absolute -left-12 -top-12 h-44 w-44 rounded-full bg-[#D4AF37]/12 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-20 -right-12 h-64 w-64 rounded-full bg-blue-500/10 blur-3xl" />
         <div className="pointer-events-none absolute inset-0 opacity-20" aria-hidden="true">
           <svg viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
