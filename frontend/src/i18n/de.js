@@ -197,6 +197,7 @@ export default {
     contact_note: 'Sollten Sie auf LinkedIn keine passende Stelle finden, kontaktieren Sie mich gerne direkt — ich unterstütze Kandidaten persönlich.'
   },
   positions_page: {
+    apply: 'Bewerben',
     show_details: 'Mehr Details',
     hide_details: 'Details verbergen',
     offered_title: 'Das wird Ihnen geboten',
@@ -210,11 +211,9 @@ export default {
     lead: 'Sie suchen qualifizierte Mitarbeiter oder möchten den nächsten Karriereschritt machen? Ich freue mich auf Ihre Nachricht.',
     info: {
       email_label: 'E-Mail',
-      email: 'hello@cf-professionals.de',
+      email: 'filippi@personalvermittlung.at',
       phone_label: 'Telefon',
-      phone: '+49 170 000 0000',
-      address_label: 'Adresse',
-      address: 'Musterstraße 12, 10115 Berlin'
+      phone: '+43 660 421 53 90'
     },
     fields: { firstName: 'Vorname', lastName: 'Nachname', company: 'Unternehmen', phone: 'Telefon', email: 'E-Mail', subject: 'Betreff', message: 'Nachricht', consent: 'Ich stimme der Verarbeitung meiner Daten gemäß Datenschutzerklärung zu.' },
     send: 'Nachricht senden',
@@ -224,6 +223,7 @@ export default {
     validation: { required: 'Bitte füllen Sie alle Pflichtfelder aus.', email: 'E-Mail ungültig', consent: 'Einwilligung erforderlich', message_short: 'Bitte geben Sie eine ausführlichere Nachricht ein.' }
   }
   ,cookie: {
+    privacy_policy: 'Datenschutz',
     title: 'Wir verwenden Technologien, um die Website zu verbessern.',
     description: 'Optionale Dienste (z. B. Analytics oder Karten) werden nur mit Ihrer Zustimmung geladen.',
     accept_all: 'Alle akzeptieren',

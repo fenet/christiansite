@@ -28,6 +28,7 @@ export default function Navbar() {
 
         <nav className="main-nav" aria-label="Primary">
           <button
+            type="button"
             className="menu-toggle"
             aria-controls="primary-navigation"
             aria-expanded={menuOpen}

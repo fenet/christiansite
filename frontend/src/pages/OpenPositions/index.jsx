@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { ArrowUpRight, MapPin } from 'lucide-react'
 import { Link } from 'react-router-dom'
@@ -8,16 +9,16 @@ import SEO from '../../components/SEO'
 import PremiumContactStrip from '../../components/PremiumContactStrip'
 
 const jobs = [
-  // Removed sample cards: Senior Care Manager, Projektmanager Logistik, Leitender Immobilienberater
-  // Add Radiology position
   {
     title: 'Facharzt/in (m/w/d) für Radiologie',
     department: 'Medizin',
     location: 'Wien',
-    summary: 'Befundung konventioneller radiologischer Bildgebung sowie MRT und CT; langfristige Anstellung in einem renommierten Diagnosezentrum.',
+    summary:
+      'Befundung konventioneller radiologischer Bildgebung sowie MRT und CT; langfristige Anstellung in einem renommierten Diagnosezentrum.',
     email: 'filippi@personalvermittlung.at',
     details: {
-      intro: 'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
+      intro:
+        'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
       offered_title: 'Das wird Ihnen geboten',
       offered_points: [
         'Ein attraktives Gehaltspaket ab 140.000 € auf Basis Vollzeit, je nach Erfahrung höher',
@@ -37,22 +38,24 @@ const jobs = [
         'Sozialkompetenz und Patient*innenorientierung',
         'Eine gültige Eintragung in die Ärzteliste der österreichischen Ärztekammer ist vorhanden'
       ],
-      contact_prompt: 'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
+      contact_prompt:
+        'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
       contact_email: 'filippi@personalvermittlung.at'
     }
-  }
-  ,
+  },
   {
     title: 'Immobilienverwalter/-in (w/m/d)',
     department: 'Immobilien',
     location: 'Wien',
-    summary: 'Betreuung von Mietzins- und Wohnungseigentumsobjekten; erster Ansprechpartner für Eigentümer*innen und Mieter*innen.',
+    summary:
+      'Betreuung von Mietzins- und Wohnungseigentumsobjekten; erster Ansprechpartner für Eigentümer*innen und Mieter*innen.',
     email: 'filippi@personalvermittlung.at',
     details: {
-      intro: 'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
+      intro:
+        'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
       offered_title: 'Das wird Ihnen geboten',
       offered_points: [
         'Ein offenes, respektvolles Arbeitsumfeld mit echter Open-Door-Policy',
@@ -73,22 +76,24 @@ const jobs = [
         'Organisationstalent und Eigenverantwortung',
         'Lösungsorientierte und strukturierte Denkweise'
       ],
-      contact_prompt: 'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
+      contact_prompt:
+        'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
       contact_email: 'filippi@personalvermittlung.at'
     }
-  }
-  ,
+  },
   {
     title: 'Objektbuchhalter/-in (w/m/d) (Direktvermittlung)',
     department: 'Immobilien',
     location: 'Wien',
-    summary: 'Führung der Objektbuchhaltung einschließlich MRG- und WEG-Objekten sowie zentrale Ansprechperson für Eigentümer*innen und Mieter*innen.',
+    summary:
+      'Führung der Objektbuchhaltung einschließlich MRG- und WEG-Objekten sowie zentrale Ansprechperson für Eigentümer*innen und Mieter*innen.',
     email: 'filippi@personalvermittlung.at',
     details: {
-      intro: 'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
+      intro:
+        'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
       offered_title: 'Das wird Ihnen geboten',
       offered_points: [
         'Gleitzeitmodell',
@@ -118,22 +123,24 @@ const jobs = [
         'Sehr gute Anwenderkenntnisse in EDV sowie MS Office, idealerweise ITS oder IGEL',
         'Hohe Einsatzbereitschaft, Flexibilität und Motivation zur laufenden Weiterbildung'
       ],
-      contact_prompt: 'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
+      contact_prompt:
+        'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
       contact_email: 'filippi@personalvermittlung.at'
     }
-  }
-  ,
+  },
   {
     title: 'OP-Assistent/-in (m/w/d) - Graz',
     department: 'Medizin',
     location: 'Graz',
-    summary: 'Langfristiger Einsatz als OP-Assistent/-in in einer renommierten Klinik mit strukturierter Einarbeitung und einem professionellen Team.',
+    summary:
+      'Langfristiger Einsatz als OP-Assistent/-in in einer renommierten Klinik mit strukturierter Einarbeitung und einem professionellen Team.',
     email: 'filippi@personalvermittlung.at',
     details: {
-      intro: 'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
+      intro:
+        'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
       offered_title: 'Das wird Ihnen geboten',
       offered_points: [
         'Ein Grundgehalt bis zu 4.000 € brutto/Monat (Zulagen laut KV kommen noch on top)',
@@ -158,7 +165,8 @@ const jobs = [
         'Ausgeprägtes Verantwortungs- und Pflichtbewusstsein',
         'Berufserfahrung in diesen Bereichen wird vorausgesetzt'
       ],
-      contact_prompt: 'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
+      contact_prompt:
+        'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
@@ -169,10 +177,12 @@ const jobs = [
     title: 'OP-Assistentin (m/w/d) - Linz',
     department: 'Medizin',
     location: 'Linz',
-    summary: 'Langfristige Direktvermittlung als OP-Assistentin in einer renommierten Privatklinik mit stabilen Einsatzbedingungen.',
+    summary:
+      'Langfristige Direktvermittlung als OP-Assistentin in einer renommierten Privatklinik mit stabilen Einsatzbedingungen.',
     email: 'filippi@personalvermittlung.at',
     details: {
-      intro: 'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
+      intro:
+        'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
       offered_title: 'Das wird Ihnen geboten',
       offered_points: [
         'Ein attraktives Gehaltspaket; mindestens 3.500 € brutto',
@@ -197,22 +207,24 @@ const jobs = [
         'Ausgeprägtes Verantwortungs- und Pflichtbewusstsein',
         'Berufserfahrung in diesen Bereichen wird vorausgesetzt'
       ],
-      contact_prompt: 'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
+      contact_prompt:
+        'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
       contact_email: 'filippi@personalvermittlung.at'
     }
-  }
-  ,
+  },
   {
     title: 'Seefracht Sachbearbeiter (w/m/d) (Direktvermittlung)',
     department: 'Logistik',
     location: 'Wien',
-    summary: 'Eigenständige Abwicklung von Seefrachtsendungen in einem familiär geführten, international tätigen Transportunternehmen.',
+    summary:
+      'Eigenständige Abwicklung von Seefrachtsendungen in einem familiär geführten, international tätigen Transportunternehmen.',
     email: 'filippi@personalvermittlung.at',
     details: {
-      intro: 'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
+      intro:
+        'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
       offered_title: 'Das wird Ihnen geboten',
       offered_points: [
         'Ein marktkonformes Gehalt bis zu 3.500,00 EUR brutto / Monat - abhängig von Berufserfahrung und Qualifikation',
@@ -239,23 +251,24 @@ const jobs = [
         'Freude am Arbeiten im Team',
         'Lösungsorientiertes Denken und Handeln'
       ],
-      contact_prompt: 'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
+      contact_prompt:
+        'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
       contact_email: 'filippi@personalvermittlung.at'
     }
-  }
-
-  ,
+  },
   {
     title: 'Arzt/in für Allgemeinmedizin (m/w/d)',
     department: 'Medizin',
     location: 'Steiermark',
-    summary: 'Direktvermittlung für eine renommierte Privatklinik/Thermalhotel in der Steiermark; attraktive Rahmenbedingungen und familienfreundliche Arbeitszeitmodelle.',
+    summary:
+      'Direktvermittlung für eine renommierte Privatklinik/Thermalhotel in der Steiermark; attraktive Rahmenbedingungen und familienfreundliche Arbeitszeitmodelle.',
     email: 'filippi@personalvermittlung.at',
     details: {
-      intro: 'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
+      intro:
+        'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
       offered_title: 'Das wird Ihnen geboten',
       offered_points: [
         'Jahresbruttogehalt ab € 100.000 auf Basis 40 Wochenstunden (inkl. Zulagen, exkl. Sonderzulagen)',
@@ -285,22 +298,24 @@ const jobs = [
         'Strukturierte, verantwortungsbewusste und qualitätsorientierte Arbeitsweise',
         'Interesse an Kurmedizin, Gesundheitsvorsorge und Prävention ist von Vorteil'
       ],
-      contact_prompt: 'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
+      contact_prompt:
+        'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
       contact_email: 'filippi@personalvermittlung.at'
     }
-  }
-  ,
+  },
   {
     title: 'Bilanzbuchhalter (m/w/d)',
     department: 'Finanzen',
     location: 'Wien',
-    summary: 'Direktvermittlung für einen namhaften Partner in Wien — verantwortliche Position in der Bilanzbuchhaltung.',
+    summary:
+      'Direktvermittlung für einen namhaften Partner in Wien — verantwortliche Position in der Bilanzbuchhaltung.',
     email: 'filippi@personalvermittlung.at',
     details: {
-      intro: 'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
+      intro:
+        'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
       offered_title: 'Das wird Ihnen geboten',
       offered_points: [
         'Ein Grundgehalt ab 4.000 € – bei anrechenbaren Vordienstzeiten höher',
@@ -324,7 +339,8 @@ const jobs = [
         'Idealerweise BMD/NTCS-Erfahrung',
         'Analytische, zielorientierte Arbeitsweise sowie Verantwortungsbewusstsein und Genauigkeit'
       ],
-      contact_prompt: 'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
+      contact_prompt:
+        'Interesse geweckt? Bitte schicken Sie uns Ihre Bewerbung auf:',
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
@@ -343,124 +359,246 @@ export default function OpenPositions() {
 
   return (
     <>
-      <SEO title={`CF Professionals | ${t('positions.title', 'Offene Stellen')}`} description={t('meta.positions')} />
+      <SEO
+        title={`CF Professionals | ${t('positions.title', 'Offene Stellen')}`}
+        description={t('meta.positions')}
+      />
 
-      <main className="bg-[#FAF9F6] py-16 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-          <div className="mb-12 max-w-2xl">
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-[#0B111E] sm:text-5xl">
-              {t('positions.title', 'Offene Stellen')}
-            </h1>
-            <div className="mt-4 h-1 w-16 bg-[#D4AF37]" />
-            <p className="mt-6 text-base leading-relaxed text-slate-700">
-              {t('positions.lead', 'Entdecken Sie aktuelle Möglichkeiten für Ihre berufliche Weiterentwicklung in dynamischen und verantwortungsvollen Rollen.')}
-            </p>
-          </div>
+      <main className="bg-[#FAF9F6]">
 
-          <div className="space-y-5">
-            {jobs.map((job, idx) => (
-              <article key={job.title} className="rounded-2xl border border-[#D4AF37]/20 bg-white p-6 shadow-[0_18px_45px_rgba(11,17,30,0.04)] sm:p-7">
-                <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-                  <div>
-                    <div className="flex flex-wrap items-center gap-3">
-                      <h2 className="text-2xl font-bold text-[#0B111E]">{job.title}</h2>
-                      <span className="inline-flex rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37]">
-                        {job.department}
-                      </span>
-                    </div>
+        {/* =========================================================
+            HERO
+        ========================================================= */}
+        <section className="bg-[#0B111E]">
+          <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
+            <div className="max-w-3xl">
+            
+              <h1 className="mt-5 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                {t('positions.title', 'Offene Stellen')}
+              </h1>
 
-                    <div className="mt-3 flex items-center gap-2 text-sm text-slate-600">
-                      <MapPin className="h-4 w-4 text-[#D4AF37]" />
-                      <span>{job.location}</span>
-                    </div>
-                  </div>
+              <div className="mt-6 h-1 w-16 bg-[#D4AF37]" />
 
-                  <div className="flex items-center gap-3">
-                    <button onClick={() => toggle(idx)} className="text-sm text-slate-700 underline underline-offset-2">
-                      {openIndex === idx ? t('positions.hide_details', 'Details verbergen') : t('positions.show_details', 'Mehr Details')}
-                    </button>
-
-                    {job.email ? (
-                      <a href={`mailto:${job.email}`} className="inline-flex items-center gap-2 rounded-xl bg-[#D4AF37] px-5 py-3 text-sm font-bold text-[#0B111E]">
-                        {t('positions.apply', 'Jetzt bewerben')}
-                        <ArrowUpRight className="h-4 w-4" />
-                      </a>
-                    ) : (
-                      <Link to={localizedRoute('contact', locale)}>
-                        <Button variant="primary" className="inline-flex items-center gap-2 rounded-xl bg-[#D4AF37] px-5 py-3 text-sm font-bold text-[#0B111E] hover:bg-[#c29f2f]">
-                          {t('positions.apply', 'Jetzt bewerben')}
-                          <ArrowUpRight className="h-4 w-4" />
-                        </Button>
-                      </Link>
-                    )}
-                  </div>
-                </div>
-
-                <p className="mt-5 max-w-3xl text-sm leading-relaxed text-slate-700 sm:text-base">
-                  {job.summary}
-                </p>
-
-                {openIndex === idx && job.details && (
-                  <div className="mt-6 border-t pt-6 text-sm text-slate-700">
-                    {job.details.intro && <p className="mb-4">{job.details.intro}</p>}
-
-                    {job.details.offered_title && <h4 className="font-semibold text-[#0B111E]">{job.details.offered_title}</h4>}
-                    {job.details.offered_points && (
-                      <ul className="mt-2 list-disc pl-5 text-slate-700">
-                        {job.details.offered_points.map((p, i) => <li key={i}>{p}</li>)}
-                      </ul>
-                    )}
-
-                    {job.details.tasks_title && <h4 className="mt-4 font-semibold text-[#0B111E]">{job.details.tasks_title}</h4>}
-                    {job.details.tasks_points && (
-                      <ul className="mt-2 list-disc pl-5 text-slate-700">
-                        {job.details.tasks_points.map((p, i) => <li key={i}>{p}</li>)}
-                      </ul>
-                    )}
-
-                    {job.details.requirements_title && <h4 className="mt-4 font-semibold text-[#0B111E]">{job.details.requirements_title}</h4>}
-                    {job.details.requirements_points && (
-                      <ul className="mt-2 list-disc pl-5 text-slate-700">
-                        {job.details.requirements_points.map((p, i) => <li key={i}>{p}</li>)}
-                      </ul>
-                    )}
-
-                    {job.details.contact_prompt && (
-                      <div className="mt-4">
-                        <p className="font-medium">{job.details.contact_prompt}</p>
-                        <p className="mt-2"><strong>{job.details.contact_person}</strong></p>
-                        <p className="mt-1">{t('positions.contact.phone_label', 'Kontakt')}: <a href={`tel:${job.details.contact_phone_raw || '+436604215390'}`} className="underline">{job.details.contact_phone}</a></p>
-                        <p className="mt-1">E-Mail: <a href={`mailto:${job.details.contact_email}`} className="underline">{job.details.contact_email}</a></p>
-                      </div>
-                    )}
-                  </div>
+              <p className="mt-7 max-w-2xl text-base leading-relaxed text-slate-300 sm:text-lg">
+                {t(
+                  'positions.lead',
+                  'Entdecken Sie aktuelle Möglichkeiten für Ihre berufliche Weiterentwicklung in dynamischen und verantwortungsvollen Rollen.'
                 )}
-              </article>
-            ))}
+              </p>
+            </div>
           </div>
+        </section>
+
+        {/* =========================================================
+            SMALL GAP BETWEEN HERO AND JOBS
+        ========================================================= */}
+        <div className="h-8 bg-[#FAF9F6] sm:h-10" />
+
+        {/* =========================================================
+            JOB POSITIONS
+        ========================================================= */}
+        <section className="bg-[#FAF9F6] pb-16 sm:pb-20 lg:pb-24">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
+
+            <div className="space-y-5">
+              {jobs.map((job, idx) => (
+                <article
+                  key={job.title}
+                  className="rounded-2xl border border-[#D4AF37]/20 bg-white p-6 shadow-[0_18px_45px_rgba(11,17,30,0.04)] transition-shadow duration-300 hover:shadow-[0_20px_50px_rgba(11,17,30,0.08)] sm:p-7"
+                >
+                  <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+                    <div className="min-w-0">
+                      <div className="flex flex-wrap items-center gap-3">
+                        <h2 className="text-2xl font-bold text-[#0B111E]">
+                          {job.title}
+                        </h2>
+
+                        <span className="inline-flex rounded-full border border-[#D4AF37]/30 bg-[#D4AF37]/10 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-[#A78318]">
+                          {job.department}
+                        </span>
+                      </div>
+
+                      <div className="mt-3 flex items-center gap-2 text-sm text-slate-600">
+                        <MapPin className="h-4 w-4 shrink-0 text-[#D4AF37]" />
+                        <span>{job.location}</span>
+                      </div>
+                    </div>
+
+                    <div className="flex shrink-0 flex-wrap items-center gap-3">
+                      <button
+                        type="button"
+                        onClick={() => toggle(idx)}
+                        className="text-sm font-medium text-slate-700 underline underline-offset-2 transition-colors hover:text-[#0B111E]"
+                      >
+                        {openIndex === idx
+                          ? t('positions_page.hide_details', 'Details verbergen')
+                          : t('positions_page.show_details', 'Details')}
+                      </button>
+
+                      {job.email ? (
+                        <a
+                          href={`mailto:${job.email}`}
+                          className="inline-flex items-center gap-2 rounded-xl bg-[#D4AF37] px-5 py-3 text-sm font-bold text-[#0B111E] transition-colors hover:bg-[#c29f2f]"
+                        >
+                          {t('positions_page.apply', 'Bewerben')}
+                          <ArrowUpRight className="h-4 w-4" />
+                        </a>
+                      ) : (
+                        <Link to={localizedRoute('contact', locale)}>
+                          <Button
+                            variant="primary"
+                            className="inline-flex items-center gap-2 rounded-xl bg-[#D4AF37] px-5 py-3 text-sm font-bold text-[#0B111E] hover:bg-[#c29f2f]"
+                          >
+                            {t('positions_page.apply', 'Bewerben')}
+                            <ArrowUpRight className="h-4 w-4" />
+                          </Button>
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+
+                  <p className="mt-5 max-w-3xl text-sm leading-relaxed text-slate-700 sm:text-base">
+                    {job.summary}
+                  </p>
+
+                  {openIndex === idx && job.details && (
+                    <div className="mt-6 border-t border-slate-200 pt-6 text-sm text-slate-700">
+                      {job.details.intro && (
+                        <p className="mb-5 leading-relaxed">
+                          {job.details.intro}
+                        </p>
+                      )}
+
+                      {job.details.offered_title && (
+                        <h4 className="font-semibold text-[#0B111E]">
+                          {job.details.offered_title}
+                        </h4>
+                      )}
+
+                      {job.details.offered_points && (
+                        <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">
+                          {job.details.offered_points.map((point, i) => (
+                            <li key={i}>{point}</li>
+                          ))}
+                        </ul>
+                      )}
+
+                      {job.details.tasks_title && (
+                        <h4 className="mt-5 font-semibold text-[#0B111E]">
+                          {job.details.tasks_title}
+                        </h4>
+                      )}
+
+                      {job.details.tasks_points && (
+                        <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">
+                          {job.details.tasks_points.map((point, i) => (
+                            <li key={i}>{point}</li>
+                          ))}
+                        </ul>
+                      )}
+
+                      {job.details.requirements_title && (
+                        <h4 className="mt-5 font-semibold text-[#0B111E]">
+                          {job.details.requirements_title}
+                        </h4>
+                      )}
+
+                      {job.details.requirements_points && (
+                        <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-700">
+                          {job.details.requirements_points.map((point, i) => (
+                            <li key={i}>{point}</li>
+                          ))}
+                        </ul>
+                      )}
+
+                      {job.details.contact_prompt && (
+                        <div className="mt-6 rounded-xl bg-[#FAF9F6] p-5">
+                          <p className="font-medium text-[#0B111E]">
+                            {job.details.contact_prompt}
+                          </p>
+
+                          <p className="mt-3">
+                            <strong>{job.details.contact_person}</strong>
+                          </p>
+
+                          <p className="mt-1">
+                            {t('positions.contact.phone_label', 'Kontakt')}:{' '}
+                            <a
+                              href={`tel:${job.details.contact_phone_raw || '+436604215390'}`}
+                              className="underline underline-offset-2"
+                            >
+                              {job.details.contact_phone}
+                            </a>
+                          </p>
+
+                          <p className="mt-1">
+                            E-Mail:{' '}
+                            <a
+                              href={`mailto:${job.details.contact_email}`}
+                              className="underline underline-offset-2"
+                            >
+                              {job.details.contact_email}
+                            </a>
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </article>
+              ))}
+            </div>
+
           </div>
+        </section>
 
-        <div className="mt-12" />
-
-        <section className="bg-gradient-to-br from-[#0B111E] via-[#06101A] to-[#000812] py-12">
-          <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        {/* =========================================================
+            CONTACT / CTA
+        ========================================================= */}
+        <section className="bg-gradient-to-br from-[#0B111E] via-[#06101A] to-[#000812] py-12 sm:py-14">
+          <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
             <PremiumContactStrip
               compact
-              eyebrow={t('home_page.cta_eyebrow', 'LASSEN SIE UNS SPRECHEN.')}
+              eyebrow={t(
+                'home_page.cta_eyebrow',
+                'LASSEN SIE UNS SPRECHEN.'
+              )}
               title={t('positions.title', 'Offene Stellen')}
-              email={t('home_page.contact_email', 'filippi@personalvermittlung.at')}
-              phone={t('home_page.contact_phone', '+49 170 1234567')}
-              primaryLabel={t('positions.apply', 'Jetzt bewerben')}
+              email={t(
+                'home_page.contact_email',
+                'filippi@personalvermittlung.at'
+              )}
+              phone={t(
+                'home_page.contact_phone',
+                '+43 660 421 53 90'
+              )}
+              primaryLabel={t(
+                'positions_page.apply',
+                'Bewerben'
+              )}
               primaryTo={localizedRoute('contact', locale)}
-              secondaryLabel={t('home_page.cta_secondary', 'Unsere Leistungen')}
+              secondaryLabel={t(
+                'home_page.cta_secondary',
+                'Unsere Leistungen'
+              )}
               secondaryTo={localizedRoute('services', locale)}
-              linkedinEyebrow={t('home_page.linkedin_eyebrow', 'Aktuelle Stellen')}
-              linkedinText={t('home_page.linkedin_text', 'Folgen Sie unseren neuesten Stellenangeboten und Updates auf LinkedIn.')}
-              linkedinCta={t('home_page.linkedin_cta', 'Auf LinkedIn ansehen')}
+              linkedinEyebrow={t(
+                'home_page.linkedin_eyebrow',
+                'Aktuelle Stellen'
+              )}
+              linkedinText={t(
+                'home_page.linkedin_text',
+                'Folgen Sie unseren neuesten Stellenangeboten und Updates auf LinkedIn.'
+              )}
+              linkedinCta={t(
+                'home_page.linkedin_cta',
+                'Auf LinkedIn ansehen'
+              )}
             />
           </div>
         </section>
+
       </main>
     </>
   )
 }
+

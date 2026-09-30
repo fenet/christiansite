@@ -590,12 +590,6 @@ export default function Home(){
                 <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-[#D4AF37] via-[#D4AF37]/50 to-transparent" />
 
                 {/* Large background number */}
-                <span
-                  className="pointer-events-none absolute -bottom-8 right-4 select-none font-serif text-[88px] font-bold leading-none text-[#0B111E]/[0.025] sm:text-[110px]"
-                  aria-hidden="true"
-                >
-                  01
-                </span>
 
                 {/* Icon */}
                 <div className="relative z-10 mb-6 flex items-center justify-between">
@@ -629,6 +623,12 @@ export default function Home(){
                   <span className="h-px flex-1 bg-[#0B111E]/10" />
                 </div>
               </div>
+              <span
+                className="pointer-events-none absolute top-1/2 hidden -translate-y-1/2 select-none font-serif text-[88px] font-bold leading-none text-[#0B111E]/[0.08] lg:left-[calc(100%+5rem)] lg:block"
+                aria-hidden="true"
+              >
+                01
+              </span>
             </div>
           );
         })()}
@@ -670,12 +670,6 @@ export default function Home(){
                 <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-[#D4AF37]" />
 
                 {/* Large background number */}
-                <span
-                  className="pointer-events-none absolute -bottom-8 right-4 select-none font-serif text-[88px] font-bold leading-none text-white/[0.035] sm:text-[110px]"
-                  aria-hidden="true"
-                >
-                  02
-                </span>
 
                 {/* Icon */}
                 <div className="relative z-10 mb-6 flex items-center justify-between">
@@ -708,6 +702,12 @@ export default function Home(){
                   <span className="h-px flex-1 bg-white/10" />
                 </div>
               </div>
+              <span
+                className="pointer-events-none absolute top-1/2 hidden -translate-y-1/2 select-none font-serif text-[88px] font-bold leading-none text-[#0B111E]/[0.08] lg:right-[calc(100%+5rem)] lg:block"
+                aria-hidden="true"
+              >
+                02
+              </span>
             </div>
           );
         })()}
@@ -745,13 +745,6 @@ export default function Home(){
 
                 <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-[#D4AF37] via-[#D4AF37]/50 to-transparent" />
 
-                <span
-                  className="pointer-events-none absolute -bottom-8 right-4 select-none font-serif text-[88px] font-bold leading-none text-[#0B111E]/[0.025] sm:text-[110px]"
-                  aria-hidden="true"
-                >
-                  03
-                </span>
-
                 <div className="relative z-10 mb-6 flex items-center justify-between">
                   <div className="flex h-12 w-12 items-center justify-center border border-[#D4AF37]/40 bg-[#D4AF37]/[0.06] text-[#D4AF37] transition-transform duration-500 group-hover:scale-105 sm:h-14 sm:w-14">
                     <StepIcon
@@ -782,6 +775,12 @@ export default function Home(){
                   <span className="h-px flex-1 bg-[#0B111E]/10" />
                 </div>
               </div>
+              <span
+                className="pointer-events-none absolute top-1/2 hidden -translate-y-1/2 select-none font-serif text-[88px] font-bold leading-none text-[#0B111E]/[0.08] lg:left-[calc(100%+5rem)] lg:block"
+                aria-hidden="true"
+              >
+                03
+              </span>
             </div>
           );
         })()}
@@ -819,13 +818,6 @@ export default function Home(){
 
                 <div className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-[#D4AF37] to-[#D4AF37]" />
 
-                <span
-                  className="pointer-events-none absolute -bottom-8 right-4 select-none font-serif text-[88px] font-bold leading-none text-white/[0.035] sm:text-[110px]"
-                  aria-hidden="true"
-                >
-                  04
-                </span>
-
                 <div className="relative z-10 mb-6 flex items-center justify-between">
                   <div className="flex h-12 w-12 items-center justify-center border border-[#D4AF37]/50 bg-[#D4AF37]/10 text-[#D4AF37] transition-transform duration-500 group-hover:scale-105 sm:h-14 sm:w-14">
                     <StepIcon
@@ -856,6 +848,12 @@ export default function Home(){
                   <span className="h-px flex-1 bg-white/10" />
                 </div>
               </div>
+              <span
+                className="pointer-events-none absolute top-1/2 hidden -translate-y-1/2 select-none font-serif text-[88px] font-bold leading-none text-[#0B111E]/[0.08] lg:right-[calc(100%+5rem)] lg:block"
+                aria-hidden="true"
+              >
+                04
+              </span>
             </div>
           );
         })()}

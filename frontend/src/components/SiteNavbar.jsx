@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { localizedRoute, deRoutes, enRoutes } from '../lib/routes'
 import { useTranslation, setPreferredLang } from '../i18n'
@@ -9,6 +9,10 @@ export default function SiteNavbar(){
   const location = useLocation()
   const navigate = useNavigate()
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    setOpen(false)
+  }, [location.pathname])
 
   function isActive(key){
     return location.pathname === localizedRoute(key, locale)
@@ -40,7 +44,7 @@ export default function SiteNavbar(){
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200/80 shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 h-20 md:h-24 flex items-center justify-between">
+      <div className="relative max-w-7xl mx-auto px-6 h-20 md:h-24 flex items-center justify-between">
         <Link to={localizedRoute('home', locale)} className="flex items-center gap-4">
           <img src="/images/cf-professionals-logo.png" alt="CF Professionals" className="h-16 md:h-20 w-auto object-contain" />
         </Link>
@@ -60,14 +64,21 @@ export default function SiteNavbar(){
             <button aria-label="English" onClick={() => switchLang('en')} className={locale === 'en' ? 'text-[#D4AF37]' : 'text-[#0B111E]'}>EN</button>
           </div>
 
-          <button aria-label="Open menu" className="md:hidden p-2" onClick={() => setOpen(v => !v)}>
+          <button
+            aria-label="Open menu"
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
+            type="button"
+            className="md:hidden inline-flex h-12 w-12 items-center justify-center rounded-full border border-slate-200 bg-white text-[#0B111E] shadow-sm active:scale-95"
+            onClick={() => setOpen(v => !v)}
+          >
             {open ? <X className="w-6 h-6 text-[#0B111E]" /> : <Menu className="w-6 h-6 text-[#0B111E]" />}
           </button>
         </div>
 
         {/* Mobile menu */}
         {open && (
-          <div className="md:hidden absolute left-0 right-0 top-full bg-white border-b border-slate-100 shadow-md">
+          <div id="mobile-navigation" className="md:hidden absolute left-0 right-0 top-full z-50 bg-white border-b border-slate-100 shadow-md">
             <div className="px-4 py-4 flex flex-col gap-3">
               <Link to={localizedRoute('home', locale)} onClick={() => setOpen(false)} className="text-[#0B111E] font-bold">{t('nav.home')}</Link>
               <Link to={localizedRoute('about', locale)} onClick={() => setOpen(false)} className="text-[#0B111E] font-bold">{t('nav.about')}</Link>

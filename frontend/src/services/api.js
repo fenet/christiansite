@@ -5,4 +5,22 @@ export async function getHealth(){
   return res.json()
 }
 
-export default { getHealth }
+export async function sendContact(payload){
+  const res = await fetch(`${API_BASE}/api/contact`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  })
+
+  const data = await res.json().catch(() => ({}))
+
+  if(!res.ok){
+    throw new Error(data?.message || 'Failed to send contact form')
+  }
+
+  return data
+}
+
+export default { getHealth, sendContact }
