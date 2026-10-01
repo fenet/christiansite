@@ -670,8 +670,8 @@ body {
   }
 
   .logo {
-    height: 54px;
-    max-height: 54px;
+    height: 62px;
+    max-height: 62px;
 
     max-width: min(
       210px,
@@ -705,8 +705,8 @@ body {
   }
 
   .logo {
-    height: 50px;
-    max-height: 50px;
+    height: 58px;
+    max-height: 58px;
 
     max-width: 180px;
   }

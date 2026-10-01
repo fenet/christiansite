@@ -391,7 +391,8 @@ export default function About() {
               className="
                 grid
                 grid-cols-1
-                gap-8
+                gap-5
+                sm:gap-8
                 lg:grid-cols-12
                 lg:gap-12
                 lg:items-stretch
@@ -467,20 +468,19 @@ export default function About() {
                 "
               >
 
-                {/* 
-                  IMPORTANT:
-                  On mobile we explicitly give the video a real height.
-                  This prevents the old absolute/inset + min-h-full
-                  combination from cutting the container at the top.
-                */}
+                {/* Responsive aspect ratio keeps the video visible on mobile. */}
                 <div
                   className="
                     video-column
                     relative
-                    h-[360px]
+                    aspect-video
+                    h-auto
+                    min-h-[180px]
                     w-full
-                    sm:h-[420px]
-                    md:h-[480px]
+                    sm:aspect-[16/10]
+                    sm:min-h-[240px]
+                    md:min-h-[320px]
+                    lg:aspect-auto
                     lg:h-auto
                     lg:min-h-[500px]
                   "

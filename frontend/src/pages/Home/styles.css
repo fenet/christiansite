@@ -952,3 +952,10 @@
   }
 }
 
+
+/* Give the mobile hero copy a little more breathing room from the bottom edge. */
+@media (max-width: 640px) {
+  .luxury-hero .hero-inner {
+    padding-bottom: 3.5rem;
+  }
+}
