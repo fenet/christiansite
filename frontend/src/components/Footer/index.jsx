@@ -13,8 +13,8 @@ export default function Footer(){
   const CONTACT = {
     phone: '+43 660 421 53 90',
     phoneHref: 'tel:+436604215390',
-    email: 'filippi@personalvermittlung.at',
-    emailHref: 'mailto:filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
+    emailHref: 'mailto:filippi@cfprofessionals.at',
     linkedin: 'https://www.linkedin.com/in/christian-f-716866158/'
   }
 

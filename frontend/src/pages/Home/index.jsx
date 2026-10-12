@@ -866,7 +866,7 @@ export default function Home(){
         compact
         eyebrow={t('home_page.cta_eyebrow') || 'LASSEN SIE UNS SPRECHEN.'}
         title={t('home_page.cta_title') || 'Lassen Sie uns sprechen.'}
-        email={t('home_page.contact_email') || 'filippi@personalvermittlung.at'}
+        email={t('home_page.contact_email') || 'filippi@cfprofessionals.at'}
         phone={t('home_page.contact_phone') || '+43 660 421 53 90'}
         primaryLabel={t('home_page.cta_primary') || 'Kontakt aufnehmen'}
         primaryTo={localizedRoute('contact', locale)}

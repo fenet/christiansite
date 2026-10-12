@@ -17,7 +17,7 @@ export default function Contact() {
       label: t('contact.info.email_label', 'E-Mail'),
       value: t(
         'contact.info.email',
-        'filippi@personalvermittlung.at'
+        'filippi@cfprofessionals.at'
       ),
       icon: Mail,
     },
@@ -34,7 +34,8 @@ export default function Contact() {
   async function handleSubmit(event) {
     event.preventDefault()
 
-    const formData = new FormData(event.currentTarget)
+    const form = event.currentTarget
+    const formData = new FormData(form)
     const payload = {
       firstName: String(formData.get('firstName') || '').trim(),
       lastName: String(formData.get('lastName') || '').trim(),
@@ -55,7 +56,7 @@ export default function Contact() {
       await sendContact(payload)
       setStatusType('success')
       setStatusMessage(t('contact.success', 'Thank you — your message has been sent.'))
-      event.currentTarget.reset()
+      form.reset()
     } catch (error) {
       setStatusType('error')
       setStatusMessage(error?.message || t('contact.error_generic', 'Error sending message. Please try again later.'))
@@ -698,7 +699,7 @@ export default function Contact() {
               )}
               email={t(
                 'home_page.contact_email',
-                'filippi@personalvermittlung.at'
+                'filippi@cfprofessionals.at'
               )}
               phone={t(
                 'home_page.contact_phone',

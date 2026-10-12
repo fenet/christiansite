@@ -21,7 +21,7 @@ export default function Datenschutz() {
 
   const phone = '+43 660 421 53 90'
   const phoneRaw = '+436604215390'
-  const email = 'filippi@personalvermittlung.at'
+  const email = 'filippi@cfprofessionals.at'
 
   const copy = isEnglish
     ? {

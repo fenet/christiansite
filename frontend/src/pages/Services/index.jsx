@@ -13,7 +13,7 @@ export default function Services() {
   const services = [
     {
       title: t('services.direct_placement_title', 'Direktvermittlung'),
-      description: t('services.direct_placement_text', 'Gezielte Suche, Vorauswahl und persönliche Einführung der passenden Kandidaten für Schlüsselpositionen – mit klaren Verantwortlichkeiten und kurzen Entscheidungswegen.'),
+      description: t('services.direct_placement_text', 'Gezielte Suche, Vorauswahl und Platzierung passender Kandidaten für Schlüsselpositionen – mit klaren Verantwortlichkeiten und kurzen Entscheidungswegen.'),
       icon: BriefcaseBusiness,
     },
     {
@@ -27,8 +27,8 @@ export default function Services() {
       icon: Users,
     },
     {
-      title: t('services.industries_title', 'Industrien'),
-      description: t('services.industries_text', 'Spezifische Erfahrung in Gesundheitswesen, Pflege, Medizin, Logistik und Immobilien mit praxisnaher Marktkenntnis.'),
+      title: t('services.industries_title', 'Arbeitskräfteüberlassung'),
+      description: t('services.industries_text', 'Rasche Hilfe bei Personalengpässen.'),
       icon: Building2,
     },
     {
@@ -103,7 +103,7 @@ export default function Services() {
             <PremiumContactStrip
               eyebrow={t('services.cta_eyebrow', 'LASSEN SIE UNS SPRECHEN')}
               title={t('services.cta_title', 'Geben Sie Ihrer Besetzung die richtige Richtung.')}
-              email={t('home_page.contact_email', 'filippi@personalvermittlung.at')}
+              email={t('home_page.contact_email', 'filippi@cfprofessionals.at')}
               phone={t('home_page.contact_phone', '+49 170 1234567')}
               primaryLabel={t('services.cta_button', 'Jetzt Kontakt aufnehmen')}
               primaryTo={localizedRoute('contact', locale)}

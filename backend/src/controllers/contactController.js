@@ -64,6 +64,12 @@ export async function handleContact(req,res){
 
     return res.status(200).json({status:'ok', message:'Nachricht gesendet'})
   }catch(err){
+    console.error('Contact email delivery failed', {
+      name: err?.name,
+      code: err?.code,
+      command: err?.command,
+      responseCode: err?.responseCode,
+    })
     return res.status(500).json({status:'error', message:'Serverfehler beim Senden der Nachricht'})
   }
 }

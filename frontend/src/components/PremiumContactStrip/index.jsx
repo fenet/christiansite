@@ -30,7 +30,7 @@ export default function PremiumContactStrip({
 }) {
   const primaryLink = primaryTo || '/kontakt'
   const secondaryLink = secondaryTo || '/leistungen'
-  const contactEmail = email || 'filippi@personalvermittlung.at'
+  const contactEmail = email || 'filippi@cfprofessionals.at'
   const contactPhone = phone || '+43 660 421 53 90'
 
   const PrimaryAction = primaryLink.startsWith('http') ? 'a' : Link

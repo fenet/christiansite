@@ -79,7 +79,7 @@ export default function Impressum() {
                         <Mail className="w-6 h-6 text-[#0B111E] mt-1" />
                         <div>
                           <div className="text-sm font-medium text-[#0B111E]">E-Mail</div>
-                          <a href={`mailto:${t('imprint.email') || 'filippi@personalvermittlung.at'}`} className="text-sm text-slate-700 hover:text-[#0B111E] underline underline-offset-2">{t('imprint.email') || 'filippi@personalvermittlung.at'}</a>
+                          <a href={`mailto:${t('imprint.email') || 'filippi@cfprofessionals.at'}`} className="text-sm text-slate-700 hover:text-[#0B111E] underline underline-offset-2">{t('imprint.email') || 'filippi@cfprofessionals.at'}</a>
                         </div>
                       </div>
                     </div>

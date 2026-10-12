@@ -627,7 +627,7 @@ export default function About() {
                   <h2 className="mb-4 font-serif text-2xl font-bold text-white sm:text-3xl">
                     {t(
                       'about.personal_intro_title',
-                      'Persönliche Einführung'
+                      'Persönliche Beratung'
                     )}
                   </h2>
 
@@ -664,7 +664,7 @@ export default function About() {
                   <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-[#D4AF37]">
                     {t(
                       'about.eyebrow_intro',
-                      'PERSÖNLICHE EINFÜHRUNG'
+                      'PERSÖNLICHE BERATUNG'
                     )}
                   </span>
                 </div>
@@ -1117,7 +1117,7 @@ export default function About() {
           )}
           email={t(
             'home_page.contact_email',
-            'filippi@personalvermittlung.at'
+            'filippi@cfprofessionals.at'
           )}
           phone={t(
             'home_page.contact_phone',

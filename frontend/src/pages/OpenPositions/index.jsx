@@ -15,7 +15,7 @@ const jobs = [
     location: 'Wien',
     summary:
       'Befundung konventioneller radiologischer Bildgebung sowie MRT und CT; langfristige Anstellung in einem renommierten Diagnosezentrum.',
-    email: 'filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
     details: {
       intro:
         'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
@@ -43,7 +43,7 @@ const jobs = [
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
-      contact_email: 'filippi@personalvermittlung.at'
+      contact_email: 'filippi@cfprofessionals.at'
     }
   },
   {
@@ -52,7 +52,7 @@ const jobs = [
     location: 'Wien',
     summary:
       'Betreuung von Mietzins- und Wohnungseigentumsobjekten; erster Ansprechpartner für Eigentümer*innen und Mieter*innen.',
-    email: 'filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
     details: {
       intro:
         'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
@@ -81,7 +81,7 @@ const jobs = [
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
-      contact_email: 'filippi@personalvermittlung.at'
+      contact_email: 'filippi@cfprofessionals.at'
     }
   },
   {
@@ -90,7 +90,7 @@ const jobs = [
     location: 'Wien',
     summary:
       'Führung der Objektbuchhaltung einschließlich MRG- und WEG-Objekten sowie zentrale Ansprechperson für Eigentümer*innen und Mieter*innen.',
-    email: 'filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
     details: {
       intro:
         'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
@@ -128,7 +128,7 @@ const jobs = [
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
-      contact_email: 'filippi@personalvermittlung.at'
+      contact_email: 'filippi@cfprofessionals.at'
     }
   },
   {
@@ -137,7 +137,7 @@ const jobs = [
     location: 'Graz',
     summary:
       'Langfristiger Einsatz als OP-Assistent/-in in einer renommierten Klinik mit strukturierter Einarbeitung und einem professionellen Team.',
-    email: 'filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
     details: {
       intro:
         'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
@@ -170,7 +170,7 @@ const jobs = [
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
-      contact_email: 'filippi@personalvermittlung.at'
+      contact_email: 'filippi@cfprofessionals.at'
     }
   },
   {
@@ -179,7 +179,7 @@ const jobs = [
     location: 'Linz',
     summary:
       'Langfristige Direktvermittlung als OP-Assistentin in einer renommierten Privatklinik mit stabilen Einsatzbedingungen.',
-    email: 'filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
     details: {
       intro:
         'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
@@ -212,7 +212,7 @@ const jobs = [
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
-      contact_email: 'filippi@personalvermittlung.at'
+      contact_email: 'filippi@cfprofessionals.at'
     }
   },
   {
@@ -221,7 +221,7 @@ const jobs = [
     location: 'Wien',
     summary:
       'Eigenständige Abwicklung von Seefrachtsendungen in einem familiär geführten, international tätigen Transportunternehmen.',
-    email: 'filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
     details: {
       intro:
         'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
@@ -256,7 +256,7 @@ const jobs = [
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
-      contact_email: 'filippi@personalvermittlung.at'
+      contact_email: 'filippi@cfprofessionals.at'
     }
   },
   {
@@ -265,7 +265,7 @@ const jobs = [
     location: 'Steiermark',
     summary:
       'Direktvermittlung für eine renommierte Privatklinik/Thermalhotel in der Steiermark; attraktive Rahmenbedingungen und familienfreundliche Arbeitszeitmodelle.',
-    email: 'filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
     details: {
       intro:
         'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
@@ -303,7 +303,7 @@ const jobs = [
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
-      contact_email: 'filippi@personalvermittlung.at'
+      contact_email: 'filippi@cfprofessionals.at'
     }
   },
   {
@@ -312,7 +312,7 @@ const jobs = [
     location: 'Wien',
     summary:
       'Direktvermittlung für einen namhaften Partner in Wien — verantwortliche Position in der Bilanzbuchhaltung.',
-    email: 'filippi@personalvermittlung.at',
+    email: 'filippi@cfprofessionals.at',
     details: {
       intro:
         'CF Professionals ist ein Personaldienstleister, der sich auf Vermittlungen im medizinischen Umfeld spezialisiert hat.',
@@ -344,7 +344,7 @@ const jobs = [
       contact_person: 'Christian Filippi',
       contact_phone: '+43 660 421 53 90',
       contact_phone_raw: '+436604215390',
-      contact_email: 'filippi@personalvermittlung.at'
+      contact_email: 'filippi@cfprofessionals.at'
     }
   }
 ]
@@ -565,7 +565,7 @@ export default function OpenPositions() {
               title={t('positions.title', 'Offene Stellen')}
               email={t(
                 'home_page.contact_email',
-                'filippi@personalvermittlung.at'
+                'filippi@cfprofessionals.at'
               )}
               phone={t(
                 'home_page.contact_phone',
